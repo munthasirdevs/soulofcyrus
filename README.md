@@ -1,4 +1,4 @@
-# CYRUS REX — Creative Portfolio
+# soulofcyrus Portfolio
 
 > **Creative/Art Director & Designer**  
 > Design · Film · Photography · SFX & VFX  
