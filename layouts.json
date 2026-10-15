@@ -1,0 +1,17 @@
+{
+  "branding": {
+    "name": "Straight full-height branding",
+    "presentation": "horizontal-case",
+    "template": "aftr_template.py:aftr_page",
+    "stylesheet": "/aftr.css",
+    "controller": "/aftr.js",
+    "media_order": "as supplied; film last",
+    "image_fit": "contain",
+    "desktop_top": "max(112px,12.2svh)",
+    "desktop_bottom": "14svh",
+    "mobile_top": "104px",
+    "mobile_bottom": "230px",
+    "wheel": "continuous page-level translation; no scroll snap",
+    "status": "Saved reusable source preset; no published AFTR alternative"
+  }
+}
