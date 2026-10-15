@@ -4,7 +4,6 @@
 > Design · Film · Photography · SFX & VFX  
 > *Based in Dhaka & Athens*
 
-[![Live Repository](https://img.shields.io/badge/GitHub-soulofcyrus-black?style=for-the-badge&logo=github)](https://github.com/munthasirdevs/soulofcyrus)
 [![Static Architecture](https://img.shields.io/badge/Architecture-Buildless%20Static-101010?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/HTML)
 [![Design](https://img.shields.io/badge/Discipline-Design%20%2F%20Film%20%2F%20Photo%20%2F%20VFX-gray?style=for-the-badge)](https://instagram.com/soulofcyrus)
 
