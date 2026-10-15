@@ -10,6 +10,7 @@
   mix-blend-mode: difference;
   opacity: 0;
 }
+
 .rex-cursor-shape {
   display: grid;
   place-items: center;
@@ -24,16 +25,47 @@
   white-space: nowrap;
   transition: width .24s cubic-bezier(.22, 1, .36, 1), height .24s cubic-bezier(.22, 1, .36, 1), border-radius .24s;
 }
-.rex-cursor[data-state="link"] .rex-cursor-shape { width: 7px; height: 7px; border-radius: 2px; }
-.rex-cursor[data-state="view"] .rex-cursor-shape { width: 45px; height: 24px; }
-.rex-cursor[data-state="drag"] .rex-cursor-shape { width: 58px; height: 24px; }
-.rex-cursor.is-pressed[data-state="default"] .rex-cursor-shape { width: 15px; height: 15px; }
-.rex-cursor.is-pressed[data-state="link"] .rex-cursor-shape { width: 10px; height: 10px; }
+
+.rex-cursor[data-state="link"] .rex-cursor-shape {
+  width: 7px;
+  height: 7px;
+  border-radius: 2px;
+}
+
+.rex-cursor[data-state="view"] .rex-cursor-shape {
+  width: 45px;
+  height: 24px;
+}
+
+.rex-cursor[data-state="drag"] .rex-cursor-shape {
+  width: 58px;
+  height: 24px;
+}
+
+.rex-cursor.is-pressed[data-state="default"] .rex-cursor-shape {
+  width: 15px;
+  height: 15px;
+}
+
+.rex-cursor.is-pressed[data-state="link"] .rex-cursor-shape {
+  width: 10px;
+  height: 10px;
+}
+
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) and (forced-colors: none) {
+
   /* :has restores the pointer immediately when a dialog enters the top layer. */
   html.rex-cursor-active:not(:has(dialog[open])),
-  html.rex-cursor-active:not(:has(dialog[open])) * { cursor: none !important; }
-  html.rex-cursor-active:not(:has(dialog[open])) .rex-cursor { opacity: 1; }
+  html.rex-cursor-active:not(:has(dialog[open])) * {
+    cursor: none !important;
+  }
+
+  html.rex-cursor-active:not(:has(dialog[open])) .rex-cursor {
+    opacity: 1;
+  }
+
   html.rex-cursor-active :is(input, textarea, select, [contenteditable], video[controls], iframe, [data-native-cursor]),
-  html.rex-cursor-active :is([contenteditable], [data-native-cursor]) * { cursor: revert !important; }
+  html.rex-cursor-active :is([contenteditable], [data-native-cursor]) * {
+    cursor: revert !important;
+  }
 }

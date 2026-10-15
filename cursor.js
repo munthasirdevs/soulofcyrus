@@ -1,7 +1,7 @@
 // Independent pointer enhancement; gallery drag, clicks and focus remain native.
 (() => {
   if (!window.PointerEvent || !window.CSS?.supports('mix-blend-mode', 'difference') ||
-      !CSS.supports('selector(:has(*))')) return;
+    !CSS.supports('selector(:has(*))')) return;
 
   const preference = matchMedia('(hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) and (forced-colors: none)');
   const root = document.documentElement;
@@ -35,8 +35,8 @@
   function render() {
     frame = 0;
     if (!tracking || !preference.matches || document.hidden ||
-        document.querySelector('dialog[open]') ||
-        getComputedStyle(cursor).getPropertyValue('--rex-cursor-ready').trim() !== '1') {
+      document.querySelector('dialog[open]') ||
+      getComputedStyle(cursor).getPropertyValue('--rex-cursor-ready').trim() !== '1') {
       reset();
       return;
     }
