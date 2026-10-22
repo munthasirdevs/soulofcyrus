@@ -9,6 +9,7 @@
 
 :root {
     --mono: 'Fragment Mono', 'Courier New', monospace;
+    --mono-spacing: -0.025em;
     --accent: #4b36f5
 }
 
@@ -92,7 +93,7 @@
     padding: 0 22px;
     border-radius: 100px;
     font: 10px/1 var(--mono);
-    letter-spacing: .01em;
+    letter-spacing: -0.02em;
     white-space: nowrap
 }
 
@@ -155,6 +156,7 @@
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     font: 11px/1.5 var(--mono);
+    letter-spacing: -0.02em;
     color: #fff
 }
 
@@ -224,7 +226,8 @@
 .footer-base,
 .disciplines small,
 .about-playback {
-    font-family: var(--mono)
+    font-family: var(--mono);
+    letter-spacing: -0.015em
 }
 
 /* All index artwork remains in a single left-hand stack. */
@@ -255,7 +258,17 @@
 }
 
 .work-heading h2 {
-    font-size: clamp(64px, 9vw, 140px)
+    font-size: clamp(64px, 9vw, 140px);
+    line-height: .86
+}
+
+.work-heading h2>span {
+    line-height: .86
+}
+
+.work-heading h2>strong {
+    margin-top: 1px;
+    line-height: .86
 }
 
 .work-heading>p {
@@ -319,7 +332,7 @@
 
 .project-meta {
     font: 10px/1.4 var(--mono);
-    letter-spacing: .015em;
+    letter-spacing: -0.015em;
     text-transform: uppercase;
     margin: 0;
     max-width: 400px
@@ -352,7 +365,8 @@
     display: block;
     margin-top: 22px;
     color: #808080;
-    font: 9px/1 var(--mono)
+    font: 9px/1 var(--mono);
+    letter-spacing: -0.015em
 }
 
 .work-index>span {

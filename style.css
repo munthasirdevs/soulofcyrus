@@ -32,6 +32,7 @@
     --serif: 'Instrument Serif', 'Times New Roman', serif;
     --display: Archivo, 'Arial Black', Arial, sans-serif;
     --mono: 'Fragment Mono', 'Courier New', monospace;
+    --mono-spacing: -0.025em;
     --gutter: clamp(24px, 3vw, 58px)
 }
 
@@ -120,7 +121,8 @@ header nav {
     gap: 34px;
     margin-left: auto;
     font-family: var(--mono);
-    font-size: 14px
+    font-size: 14px;
+    letter-spacing: -0.02em
 }
 
 header nav a {
@@ -181,7 +183,7 @@ header nav a {
     justify-content: space-between;
     font-family: var(--mono);
     font-size: 12px;
-    letter-spacing: .035em
+    letter-spacing: -0.015em
 }
 
 .hero-role {
@@ -222,7 +224,7 @@ header nav a {
     position: absolute;
     left: 54.1%;
     right: 1.7%;
-    top: 51.3%;
+    top: 65%;
     bottom: 4%;
     text-align: right;
     display: flex;
@@ -235,7 +237,8 @@ header nav a {
 .hero-name>span {
     font-size: clamp(45px, 7.5vw, 120px);
     line-height: .86;
-    padding-right: .06em
+    padding-right: .06em;
+    transform: translateX(20px)
 }
 
 .hero-name>strong {
@@ -256,7 +259,8 @@ header nav a {
     padding: 8px 0;
     border-bottom: 1px solid #aaa8;
     font-family: var(--mono);
-    font-size: 12px
+    font-size: 12px;
+    letter-spacing: -0.015em
 }
 
 .folio {
@@ -268,7 +272,7 @@ header nav a {
     padding: 18px 0;
     font-family: var(--mono);
     font-size: 12px;
-    letter-spacing: .04em;
+    letter-spacing: -0.015em;
     color: var(--muted)
 }
 
@@ -297,18 +301,24 @@ header nav a {
 .portrait figcaption {
     font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: .08em;
+    letter-spacing: 0;
     margin-top: 16px;
     color: var(--muted)
 }
 
 .intro-copy h2 {
-    font-size: clamp(50px, 6.7vw, 108px)
+    font-size: clamp(50px, 6.7vw, 108px);
+    line-height: .88
+}
+
+.intro-copy h2>span {
+    line-height: .88
 }
 
 .intro-copy h2>strong {
     font-size: .82em;
-    margin-top: 12px
+    margin-top: 4px;
+    line-height: .88
 }
 
 .intro-copy>p {
@@ -330,7 +340,7 @@ header nav a {
     gap: 16px 24px;
     font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: .04em;
+    letter-spacing: -0.015em;
     max-width: 450px;
     margin-top: 30px;
     color: var(--muted)
@@ -345,12 +355,18 @@ header nav a {
 }
 
 .work-heading h2 {
-    font-size: clamp(80px, 13vw, 200px)
+    font-size: clamp(80px, 13vw, 200px);
+    line-height: .86
+}
+
+.work-heading h2>span {
+    line-height: .86
 }
 
 .work-heading h2>strong {
     font-size: .78em;
-    margin-top: 7px
+    margin-top: 1px;
+    line-height: .86
 }
 
 .work-heading>p {
@@ -358,7 +374,7 @@ header nav a {
     font-size: 12px;
     text-align: right;
     line-height: 1.8;
-    letter-spacing: .04em
+    letter-spacing: -0.015em
 }
 
 .work-row {
@@ -413,6 +429,7 @@ header nav a {
     font-family: var(--mono);
     font-size: 16px;
     line-height: 1.5;
+    letter-spacing: -0.02em;
     color: var(--muted)
 }
 
@@ -517,7 +534,7 @@ header nav a {
 .disciplines small {
     font: 400 12px var(--mono);
     color: var(--muted);
-    letter-spacing: 0
+    letter-spacing: -0.02em
 }
 
 footer {
@@ -562,7 +579,7 @@ footer {
 
 .social-links small {
     font: 400 14px var(--mono);
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
     color: #67645b
 }
 
@@ -576,7 +593,7 @@ footer {
     gap: 25px;
     font-family: var(--mono);
     font-size: 12px;
-    letter-spacing: .04em;
+    letter-spacing: -0.015em;
     padding: 20px 0 30px
 }
 
@@ -608,7 +625,7 @@ footer .folio {
     margin: 90px 0 140px;
     font-family: var(--mono);
     font-size: 14px;
-    letter-spacing: 0
+    letter-spacing: -0.02em
 }
 
 .case-title {
@@ -654,6 +671,7 @@ footer .folio {
 .case-facts dt {
     font-family: var(--mono);
     font-size: 14px;
+    letter-spacing: -0.02em;
     color: var(--muted)
 }
 
@@ -700,6 +718,7 @@ footer .folio {
     font-family: var(--mono);
     font-size: 14px;
     line-height: 1.5;
+    letter-spacing: -0.015em;
     color: var(--muted);
     max-width: 650px;
     margin-top: 18px
@@ -736,7 +755,7 @@ footer .folio {
 .next-case small {
     display: block;
     font: 400 13px var(--mono);
-    letter-spacing: 0;
+    letter-spacing: -0.02em;
     color: var(--muted);
     margin-bottom: 20px
 }
@@ -1353,7 +1372,7 @@ footer .folio {
     color: white;
     font-family: var(--mono);
     font-size: 11px;
-    letter-spacing: .12em;
+    letter-spacing: .02em;
     border: 1px solid #ffffff60;
     backdrop-filter: blur(10px)
 }
