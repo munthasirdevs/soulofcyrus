@@ -145,8 +145,8 @@ if (openers.length) {
         index = (i + group.length) % group.length; const el = group[index], isVideo = el.dataset.type === 'video';
         movie.hidden = !isVideo; img.hidden = isVideo; rotation = Number(el.dataset.rotation) || 0;
         img.classList.toggle('is-rotated', rotation === 90); img.style.width = ''; img.style.height = '';
-        if (isVideo) { movie.src = el.dataset.full; movie.muted = true; movie.poster = el.querySelector('video')?.poster || ''; if (!reduced && !ribbonUserPaused) movie.play().catch(() => { }); }
-        else { img.src = el.dataset.full; img.alt = el.querySelector('img').alt; requestAnimationFrame(fit); }
+        if (isVideo) { const vSrc = el.querySelector('video source')?.getAttribute('src') || el.querySelector('video')?.getAttribute('src') || el.dataset.full; movie.src = vSrc; movie.muted = true; movie.poster = el.querySelector('video')?.poster || ''; if (!reduced && !ribbonUserPaused) movie.play().catch(() => { }); }
+        else { const iSrc = el.querySelector('img')?.getAttribute('src') || el.dataset.full; img.src = iSrc; img.alt = el.querySelector('img')?.alt || ''; requestAnimationFrame(fit); }
         caption.textContent = el.dataset.caption || ''; count.textContent = String(index + 1).padStart(2, '0') + ' / ' + String(group.length).padStart(2, '0') + ' · ' + (trigger.closest('.ribbon-group')?.dataset.title || 'Gallery');
     }
     openers.forEach(button => button.addEventListener('click', () => {

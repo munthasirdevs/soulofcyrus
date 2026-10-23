@@ -1,7 +1,7 @@
 /* REX Studio — floating navigation, quiet work index, concave galleries. */
 @font-face {
     font-family: 'Fragment Mono';
-    src: url('/assets/fonts/fragment-mono-regular.ttf') format('truetype');
+    src: url('assets/fonts/fragment-mono-regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap
