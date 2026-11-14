@@ -30,13 +30,18 @@ A high-performance, buildless creative portfolio showcasing the multidisciplinar
 
 ```
 ├── index.html                    # Root landing page (hero reel, selected works, about, contact)
-├── style.css                     # Global design system, typography tokens, layout grids
-├── gallery.css                   # Case study layouts, media grids, lightbox dialog styles
-├── cursor.css / cursor.js        # Custom desktop trailing cursor system
-├── app.js                        # App controller, media observers, video sync, menu toggles
-├── aftr.css / aftr.js            # AFTR 3D WebGL ribbon canvas and interactive shaders
-├── aftr-curved.css / aftr-route.js # Curved viewport layout rules and experience routing
 ├── content.json                  # Structured portfolio data (projects, media, credits)
+├── css/                          # Stylesheets directory
+│   ├── style.css                 # Global design system, typography tokens, layout grids
+│   ├── gallery.css               # Case study layouts, media grids, lightbox dialog styles
+│   ├── cursor.css                # Custom desktop trailing cursor system styles
+│   ├── aftr.css                  # AFTR ribbon styling
+│   └── aftr-curved.css           # Curved viewport layout rules
+├── js/                           # JavaScript controllers and scripts
+│   ├── app.js                    # App controller, media observers, video sync, menu toggles
+│   ├── cursor.js                 # Custom desktop trailing cursor physics
+│   ├── aftr.js                   # AFTR rail experience logic
+│   └── aftr-route.js             # Curved presentation route handler
 │
 ├── project/
 │   └── index.html                # Global work directory and index archive
