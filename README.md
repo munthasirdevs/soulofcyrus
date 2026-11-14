@@ -78,10 +78,14 @@ A high-performance, buildless creative portfolio showcasing the multidisciplinar
 │       └── index.html
 │
 └── assets/                       # Static production assets
+    ├── about/                    # About section cinematography film and poster
     ├── brand/                    # Brand marks and vector wordmarks
-    ├── fonts/                    # Self-hosted variable web fonts (WOFF2)
+    ├── fonts/                    # Self-hosted variable web fonts (WOFF2 & TTF)
     ├── hero/                     # Hero cinematography video and poster assets
-    ├── projects/                 # High-resolution project imagery, videos, and film posters
+    ├── monochromatic-24/         # Monochromatic/24 visual art collection
+    ├── photography/              # Selected photography collections
+    ├── portrait/                 # Cyrus Rex portraiture assets
+    ├── projects/                 # Project imagery, films, posters, and campaign assets
     └── thumbnails/               # Optimized WebP thumbnails for project grids
 ```
 
