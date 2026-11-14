@@ -1,6 +1,6 @@
 {
   "portrait": "/assets/portrait/cyrus-rex-chess.webp",
-  "aboutVideo": null,
+  "aboutVideo": "/assets/about/bold-boho-landscape.mp4",
   "instagram": "https://www.instagram.com/soulofcyrus/",
   "whatsapp": "https://wa.me/8801938466771",
   "projects": [
@@ -1012,6 +1012,14 @@
           "height": 1080
         },
         {
+          "type": "image",
+          "src": "/assets/projects/food-beverage/05-matcha-1.webp",
+          "alt": "Matcha visual study with vibrant green tea styling",
+          "width": 1080,
+          "height": 1080,
+          "source_id": "libfile_matcha_05"
+        },
+        {
           "src": "/assets/projects/food-beverage/06-milk-matcha.webp",
           "type": "image",
           "alt": "Milk and matcha drinks promotion with green and brown color blocks",
@@ -1065,7 +1073,9 @@
           "src": "/assets/projects/food-beverage/matcha-motion.mp4",
           "poster": "/assets/projects/food-beverage/matcha-poster.webp",
           "alt": "Matcha animated visual study",
-          "loop": true
+          "loop": true,
+          "width": 1080,
+          "height": 1080
         }
       ],
       "cover": {
